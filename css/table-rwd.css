@@ -1,0 +1,39 @@
+.filtere-result thead {
+  display: none;
+}
+.filtere-result.table tr {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  border: none;
+}
+
+.filtere-result.table td {
+  width: calc(100% / 2);
+  padding: 0;
+  border: none;
+  padding: 0 2px;
+  font-size: 15px;
+}
+.filtere-result.table td .td-content {
+  padding: 10px 2px;
+  text-align: center;
+}
+.filtere-result.table td:last-child {
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+}
+.filtere-result.table td:last-child::before {
+  display: none;
+}
+.filtere-result td:before {
+  display: block;
+  content: attr(td-title);
+  text-align: center;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #ececec;
+  border-bottom: 3px solid #000;
+}

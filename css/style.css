@@ -1,0 +1,14 @@
+a{
+    text-decoration: none;;
+}
+.main {
+    flex-grow: 1;
+    background-color: #ccc;
+  }
+  .user-info {
+    background-color: #ebebeb;
+    padding: 1rem 1rem 1rem 0;
+    text-align: right;
+    font-size: 14px;
+  }
+  c6c6c6

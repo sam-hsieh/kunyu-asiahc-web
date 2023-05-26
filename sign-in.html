@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>亞洲智慧健康園區登入</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/md.css">
+    <link rel="stylesheet" href="./css/sign-in.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" xmlns="">
+</head>
+
+<body>
+    <div class="signin-container">
+        <div class="logo">
+            <img src="./img/login-logo.png" alt="亞洲智慧健康園區">
+        </div>
+        <form action="">
+            <input type="number" placeholder="請輸入手機號碼" class="signin-input form-control mt-3" required>
+            <input type="password" placeholder="請輸入密碼" class="signin-input form-control mt-3" required>
+            <div class="captcha d-flex align-items-center justify-content-center py-3">
+                <img src="./img/captcha.jpg" class="img-fluid d-block me-2">
+                <a href="javascript:;" class="color-936a08 fw-6s00 fs-5 text-decoration-none d-flex align-items-center">
+                    <span>看不清楚圖片</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
+                        <path fill="%23aaaaaa" fill-rule="evenodd"
+                            d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z" />
+                        <path
+                            d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z" />
+                    </svg>
+                </a>
+            </div>
+            <input type="text" placeholder="請輸入驗證碼" class="signin-input form-control mb-3" required>
+            <div class="py-2"></div>
+            <button type="submit" class="signin-submit d-block mx-auto fs-5">登入</button>
+        </form>
+    </div>
+    <script src="./js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+body,
+html {
+  background-image: url(../img/login-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.signin-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 600px;
+  margin: 0 auto;
+  padding: 2rem 10rem;
+  background-color: #fff;
+  position: relative;
+  box-shadow: 8px 8px 73px 0 rgba(0, 0, 0, 0.3);
+}
+.signin-container::before,
+.signin-container::after {
+  content: "";
+  height: 100%;
+  position: absolute;
+  display: block;
+  width: 7px;
+  background-image: url(../img/boxz-border.png);
+  background-size: cover;
+}
+.signin-container::before {
+  left: 0;
+  top: 0;
+}
+.signin-container::after {
+  right: 0;
+  top: 0;
+}
+.signin-container .logo img {
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+}
+.signin-input{
+    border: 1px solid #c6a75c;
+}
+.signin-input:focus{
+    border-color: #715400;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(255, 185, 3, 0.25);
+}
+.signin-submit{
+    border-radius: 30px;
+    min-width: 150px;
+    border: none;
+    background-image: linear-gradient(#c6a75c,#936a08);
+    padding: 5px 10px; 
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+@media (max-width:767px) {
+    .signin-container{
+        width: 100%;
+        padding: 2rem 3.5rem;
+    }
+}

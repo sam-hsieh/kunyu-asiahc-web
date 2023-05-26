@@ -1,0 +1,224 @@
+.main {
+  background-color: #fff;
+  margin-left: var(--slidebar-width);
+}
+.main .user-info {
+  background-color: #ebebeb;
+  padding: 1.5rem 1.5rem 1.5rem 0;
+  text-align: right;
+  font-size: 14px;
+}
+.main .nav-tab {
+  background-color: #c6c6c6;
+}
+.main .nav-tab ul {
+  list-style-type: none;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-left: 0;
+  margin-bottom: 0;
+  height: 80px;
+}
+.main .nav-tab ul li {
+  font-size: 18px;
+  height: 100%;
+  font-weight: 600;
+  position: relative;
+}
+.main .nav-tab ul li:after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 25px;
+  right: -1px;
+  width: 1px;
+  height: 30px;
+  background-color: #fff;
+  /* border-left: 1px solid #fff; */
+}
+.main .nav-tab ul li.hideBorder:after,
+.main .nav-tab ul li:last-child:after {
+  display: none;
+}
+.main .nav-tab ul li.active a {
+  background-color: #936a08;
+}
+.main .nav-tab ul li.active > a {
+  color: #fff;
+  pointer-events: none;
+}
+.main .nav-tab ul li+li.active:after{
+display: none;
+}
+.main .nav-tab ul li a {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 0 solid #715003;
+  height: 100%;
+  width: 100%;
+  transition: all 0.3s;
+}
+.main .nav-tab ul li a:hover {
+  border-bottom: 6px solid #715003;
+}
+
+.main .breadcrumb {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 25px 0;
+}
+.main .breadcrumb a {
+  color: #000;
+}
+.main .breadcrumb-item + .breadcrumb-item::before {
+  color: #936a08;
+}
+.filtere-result.table td,
+.filtere-result.table th {
+  padding: 0.8rem 0.5rem;
+  vertical-align: middle;
+  font-size: 13px;
+}
+.filtere-result.table th {
+  border-bottom: 3px solid #000;
+}
+.filtere-result button {
+  font-size: 13px;
+}
+.filtere-result.table th {
+  text-align: center;
+}
+.filtere-result.table td,
+.filtere-result.table th {
+  white-space: nowrap;
+}
+.moble-mst,
+.mask {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .main {
+    margin-left: 0;
+  }
+  .main .nav-tab ul li a {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .filtere-result.table td,
+  .filtere-result.table th {
+    font-size: 15px;
+  }
+  .moble-mst {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: #d9be8a;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 96;
+  }
+  .moble-mst .logo-m {
+    margin-left: 5%;
+    width: 210px;
+  }
+  #mclik {
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    margin-right: 2%;
+    width: 40px;
+    height: 60px;
+    z-index: 98;
+    border: none;
+    background-color: transparent;
+  }
+  #mclik:before {
+    font-family: bootstrap-icons !important;
+    content: "\F479";
+    color: #936a08;
+    font-size: 32px;
+  }
+  #mclik.close:before {
+    content: "\F659";
+    color: #fff;
+  }
+  .mask.showup {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 97;
+  }
+}
+@media (max-width: 768px) {
+  .main .nav-tab {
+    margin: 12px 24px 0 24px;
+    background-color: transparent;
+    /* display: flex;
+    align-items: center;
+    flex-direction: column; */
+  }
+  .wp-nav-tab-ul{
+    display: none;
+  }
+  .main .nav-tab ul {
+    transition: all 0.5s;
+    border-radius: 5px;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: auto;
+     /*transition: all 0.3s;
+    background-color: #ccc;
+   
+    box-sizing: content-box; */
+  }
+  .main .nav-tab ul li {
+    height: 40px;
+    width: 100%;
+    font-size: 18px;
+  }
+  /* .main .nav-tab.open ul {
+    display: flex;
+    flex-direction: column;
+   
+  } */
+  .main .nav-tab ul li + li:after {
+    display: none;
+  }
+  .main .nav-tab ul li + li {
+    border-top: 1px solid #936a08;
+  }
+  .main .nav-tab ul li a:hover {
+    border-bottom: none;
+  }
+  /* .main .nav-tab:before {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: bootstrap-icons !important;
+    content: "請選擇項目 \F229 ";
+  } */
+  .main .user-info {
+    background-color: #ebebeb;
+    padding: 1rem 1rem 1rem 0;
+    text-align: right;
+  }
+}
